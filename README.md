@@ -7,4 +7,4 @@ Fixing a corrupted or malfunctioning USB flash drive is easier than ever. This r
 
 Whether you're dealing with a stubborn flash drive or just want to learn the recovery process, this guide walks you through everything you need to know.
 
-## Repair corrupted USB flash drive without formatting - [Click Here](R1.md)
+## [ 1 ] Repair corrupted USB flash drive without formatting - [Click Here](R1.md)
