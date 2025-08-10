@@ -112,7 +112,7 @@ format fs=ntfs quick
 ```
 depending on your needs) to format the drive.
 
-- NTFS is the superior choice due to its features and performance. FAT32 is best suited for removable storage devices where maximum compatibility is needed. ExFAT is a good middle ground for large files and cross-platform compatibility, but it may be less reliable than NTFS. [read more](LINK).
+- NTFS is the superior choice due to its features and performance. FAT32 is best suited for removable storage devices where maximum compatibility is needed. ExFAT is a good middle ground for large files and cross-platform compatibility, but it may be less reliable than NTFS. [read more](Different File Systems (NTFS, FAT32, ExFAT).md).
 
 
 
