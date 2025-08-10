@@ -118,9 +118,8 @@ format fs=exfat quick
 ```bash
 format fs=ntfs quick
 ```
-and press `Enter`. 
 
-(Choice One Option depending on your needs) to format the drive.
+(Choice One Option depending on your needs) to format the drive. and press `Enter`. 
 
 - NTFS is the superior choice due to its features and performance. FAT32 is best suited for removable storage devices where maximum compatibility is needed. ExFAT is a good middle ground for large files and cross-platform compatibility, but it may be less reliable than NTFS. [read more](https://github.com/dhsagaryt/USB/blob/main/Different%20File%20Systems%20(NTFS%2C%20FAT32%2C%20ExFAT).md).
 
