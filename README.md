@@ -68,64 +68,61 @@ Diskpart is a command-line disk partitioning utility in Windows. It allows users
 > Start > Right-click on "`Command Prompt`" > Left-click on "`Run as administrator`" 
 
 
-  1. Type 
+Type
 ```bash
 diskpart
 ```
-and press `Enter`.
+AND PRESS `Enter`.
 
-  2. Type
+
 ```bash
 list disk
 ```
 to identify your pen drive's disk number.
 
-  4. Type
+
 ```bash
 select disk X 
 ```
 (replace X with the disk numerical number). and press `Enter`.
 
-  6. Type
+
 ```bash
 clean
 ```
 and press `Enter`. to remove all partitions and data.
 
-  8. Type
+
 ```bash
 create partition primary
 ```
 and press `Enter`. to create a new partition.
 
-  10. Type
+```bash
+active
+```
+and press `Enter`. to designate a specific partition on a disk as the "active" partition.
+
+- How to Mark Partition as Active with Easy Steps🔥The active command in Diskpart is used to mark a primary partition as active, which is crucial for booting the operating system on a BIOS-based system. When a computer starts, the BIOS looks for an active partition to load the operating system from. Marking a partition as active tells the BIOS which partition contains the necessary boot files. On UEFI systems, the EFI System Partition is used for booting, and the active command is generally not used.
+
 ```bash
 format fs=fat32 quick
 ```
-  (or 
 ```bash
 format fs=exfat quick
 ```
- or 
 ```bash
 format fs=ntfs quick
 ```
-depending on your needs) to format the drive.
+(Choice One Option depending on your needs) to format the drive.
 
 - NTFS is the superior choice due to its features and performance. FAT32 is best suited for removable storage devices where maximum compatibility is needed. ExFAT is a good middle ground for large files and cross-platform compatibility, but it may be less reliable than NTFS. [read more](https://github.com/dhsagaryt/USB/blob/main/Different%20File%20Systems%20(NTFS%2C%20FAT32%2C%20ExFAT).md).
 
-
-
-
-
-
-  12. Type
 ```bash
-`assign`
+assign
 ```
 to assign a drive letter.
 
-  14. Type
 ```bash
 `exit`
 ```
