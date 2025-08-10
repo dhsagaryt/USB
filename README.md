@@ -72,7 +72,7 @@ Type
 ```bash
 diskpart
 ```
-AND PRESS `Enter`.
+AND PRESS `Enter`. (Don't close the Command Prompt Window until all steps are done)
 
 
 ```bash
@@ -98,7 +98,7 @@ create partition primary
 ```
 and press `Enter`. to create a new partition.
 
-### Activate Partition (For Bootable Drive)
+### Next, Activate Partition (if needed) - (For make a Bootable Drive Only)
 
 ```bash
 active
@@ -107,7 +107,7 @@ and press `Enter`. to designate a specific partition on a disk as the "active" p
 
 - How to Mark Partition as Active with Easy Steps🔥The active command in Diskpart is used to mark a primary partition as active, which is crucial for booting the operating system on a BIOS-based system. When a computer starts, the BIOS looks for an active partition to load the operating system from. Marking a partition as active tells the BIOS which partition contains the necessary boot files. On UEFI systems, the EFI System Partition is used for booting, and the active command is generally not used.
 
-### Format Drive (Choose Any One of Them)
+### Next, To Format Drive (Choose Any One of Them)
 
 ```bash
 format fs=fat32 quick
@@ -124,7 +124,7 @@ and press `Enter`.
 
 - NTFS is the superior choice due to its features and performance. FAT32 is best suited for removable storage devices where maximum compatibility is needed. ExFAT is a good middle ground for large files and cross-platform compatibility, but it may be less reliable than NTFS. [read more](https://github.com/dhsagaryt/USB/blob/main/Different%20File%20Systems%20(NTFS%2C%20FAT32%2C%20ExFAT).md).
 
-### Assign a Drive Letter for (File Explorer). 
+### Next, Assign a Drive Letter to Show the Drive in (File Explorer). 
 
 ```bash
 assign
