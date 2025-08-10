@@ -32,9 +32,7 @@ The CHKDSK command (short for "check disk") is a built-in Windows utility used t
 
 ### Open Command Prompt as Administrator
 
-```bash
-Start > Right-click on "`Command Prompt`" > Left-click on "`Run as administrator`" 
-```
+> Start > Right-click on "`Command Prompt`" > Left-click on "`Run as administrator`" 
 
 ### Simple CHKDSK Command (Basic)
 
@@ -67,9 +65,8 @@ Diskpart is a command-line disk partitioning utility in Windows. It allows users
 
 ### Open Command Prompt as Administrator
 
-```bash
-Start > Right-click on "`Command Prompt`" > Left-click on "`Run as administrator`" 
-```
+> Start > Right-click on "`Command Prompt`" > Left-click on "`Run as administrator`" 
+
 
   1. Type 
 ```bash
@@ -79,39 +76,48 @@ and press `Enter`.
 
   2. Type
 ```bash
-`list disk`
+list disk
 ```
 to identify your pen drive's disk number.
 
   4. Type
 ```bash
-`select disk X` (replace X with the disk number).
+select disk X 
 ```
+(replace X with the disk numerical number). and press `Enter`.
 
   6. Type
 ```bash
-`clean` to remove all partitions and data.
+clean
 ```
+and press `Enter`. to remove all partitions and data.
 
   8. Type
 ```bash
-`create partition primary`
+create partition primary
 ```
-to create a new partition.
+and press `Enter`. to create a new partition.
 
   10. Type
 ```bash
-`format fs=fat32 quick`
+format fs=fat32 quick
 ```
   (or 
 ```bash
-`format fs=exfat quick`
+format fs=exfat quick
 ```
  or 
 ```bash
-`format fs=ntfs quick`
+format fs=ntfs quick
 ```
 depending on your needs) to format the drive.
+
+- NTFS is the superior choice due to its features and performance. FAT32 is best suited for removable storage devices where maximum compatibility is needed. ExFAT is a good middle ground for large files and cross-platform compatibility, but it may be less reliable than NTFS. [read more](LINK).
+
+
+
+
+
 
   12. Type
 ```bash
